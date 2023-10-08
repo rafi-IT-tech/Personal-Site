@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <nav id="desktop-nav">
+        <div class ="logo ">Rafi Personal Site</div>
+        <div>
+            <ul class = "nav-links">
+            <li> <a href="home.html"  ck="toggleMenu()">Home</a> </li>    
+
+            <li> <a href="about.html">About</a> </li>    
+            <li> <a href="portfolio.html">Portfolio</a> </li>    
+            <li> <a href="article.html">Article</a> </li>    
+            </ul>
+        </div>
+    </nav>
+    
+    <nav id="hamburger-nav">
+        <div class="logo">Rafi</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+   
+    <div class="menu-links"> 
+        <li> <a href="home.html" onclick="toggleMenu()">Home</a> </li>    
+        <li> <a href="about.html" onclick="toggleMenu()">About</a> </li>    
+        <li> <a href="portfolio.html" onclick="toggleMenu()">Portfolio</a> </li>    
+        <li> <a href="article.html" onclick="toggleMenu()">Article</a> </li>   
+    </div>
+    </div>
+    </nav>
+
+    <section class="profile" id="home">
+        <div class="section_pic-container">
+            <img src="asset/profile-pic.jpg" alt="Rafi-profile-pic">
+        </div>
+
+        <div class="section_text">
+            <p class="section_text_p1">Hello,I 'm</p>
+            <h1 class="title">Muchamad Habibie Rafi</h1>
+            <p class="section_text_p2">Informatics Engineering Student </p>
+            <div class="btn-container">
+                <button 
+                class="btn btn-color-2" 
+                onclick="window.open('./asset/rafi-resume.pdf')">Download CV
+                </button>
+
+                <button 
+                class="btn btn-color-1" 
+                onclick='location.href ="contact.html"'>Contact Info
+                </button>
+            </div>
+             <div class="social-container">
+                <img src="./asset/my-linkedin-profile.png" alt="my-linkedin-profile"
+                class="icon" onclick="callLinkedIn()">
+
+                <img src="./asset/my-gitHub-profile.png" alt="my-github-profile"
+                class="icon" onclick="callgitHub()">
+             </div>
+
+
+        </div>   
+    </section>
+</body>
+</html>
